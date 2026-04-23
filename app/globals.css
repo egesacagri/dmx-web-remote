@@ -1,13 +1,49 @@
 @import "tailwindcss";
 
-html {
+:root {
+  --bg-dark: #0A0A0A;
+  --bg-card: #161616;
+  --bg-input: #2D2D2D;
+  --text-cyan: #00D1FF;
+  --border-gray: #1A1A1A;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
   height: 100%;
+  width: 100%;
 }
 
 body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: #0A0A0A;
+  background-color: var(--bg-dark);
   color: #FFFFFF;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+#__next {
+  height: 100%;
+}
+
+/* Tailwind safe colors */
+@layer components {
+  .bg-dark-primary {
+    @apply bg-[#0A0A0A];
+  }
+  
+  .bg-dark-secondary {
+    @apply bg-[#161616];
+  }
+  
+  .bg-dark-input {
+    @apply bg-[#2D2D2D];
+  }
+  
+  .text-cyan-primary {
+    @apply text-[#00D1FF];
+  }
+  
+  .border-dark-light {
+    @apply border-gray-800;
+  }
 }
