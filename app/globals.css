@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+html {
+  height: 100%;
 }
 
 body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
   background-color: #0A0A0A;
   color: #FFFFFF;
-  font-family: system-ui, -apple-system, sans-serif;
 }
